@@ -1,13 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Bitstarter</title>
-    <link type="text/css" rel="stylesheet" 
-          href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" 
-          href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
@@ -17,18 +14,7 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
     <style type="text/css">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-      }
-      #wrap {
-        min-height: 100%;
-        height: auto !important;
-      }
-      .container {
-        width: 960px;
-        margin-top: 20px;
-      }
+
       /* Large desktop */
       @media (min-width: 980px) { 
         body {
@@ -105,38 +91,38 @@
       #footer {
         background-color: #333333;
       }
-      #push, #footer {
-        height: 60px;
-      }
     </style>
   </head>
   <body>
-    <div id="wrap">
-      <!-- Fixed navbar -->
-      <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container-fluid">
-            <a class="btn btn-navbar" data-toggle="collapse"
-              data-target=".nav-collapse"> <span class="icon-bar"></span> <span
-              class="icon-bar"></span> <span class="icon-bar"></span>
-            </a> <a class="brand" href="#">Easy 2 Shop</a>
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-              <form class="navbar-form pull-right">
-                <input class="span2" type="text" placeholder="Email"> <input
-                  class="span2" type="password" placeholder="Password">
-                <button type="submit" class="btn">Sign in</button>
-              </form>
-            </div>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse"
+            data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+            class="icon-bar"></span> <span class="icon-bar"></span>
+          </a> <a class="brand" href="#">Easy 2 Shop</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email"> <input
+                class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>
           </div>
         </div>
       </div>
-      <!-- Begin page content -->
-      <div class="container">
+    </div>
+
+    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+    <!-- http://stackoverflow.com/a/12270322 -->
+    <div class="container">
       <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
       <!-- www.google.com/fonts/specimen/Ubuntu -->
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
@@ -258,11 +244,12 @@
             <div class="accordion" id="accordion2">
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseOne">
                     What does FAQ stand for?
                   </a>
                 </div>
-                <div id="collapseOne" class="accordion-body in collapse" style="height: auto;">
+                <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
                     Frequently Asked Question.
                   </div>
@@ -270,11 +257,12 @@
               </div>
               <div class="accordion-group">
                 <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseTwo">
                     What's a Frequently Asked Question?
                   </a>
                 </div>
-                <div id="collapseTwo" class="accordion-body collapse" style="height: 0px;">
+                <div id="collapseTwo" class="accordion-body collapse">
                   <div class="accordion-inner">
                     A question which is commonly asked by users.
                   </div>
@@ -282,15 +270,13 @@
               </div>
             </div>
           </div>
-        </div>
-      <div id="push"></div>
+      </div>
     </div>
-    
-    <div id="footer">
+    <!-- Footer -->
+    <div id="footer" class="row-fluid footer">
       <div class="container-fluid">
         <p style="color: #999999; margin: 20px 0;">&copy; Easy 2 Shop Inc. 2013</p>
       </div>
     </div>
-    
   </body>
 </html>
